@@ -16,3 +16,7 @@
 $router->get('/', function () use ($router) {
     return $router->app->version();
 });
+
+$router->get('/home', 'ExampleController@index');
+$router->get('/checkNumber', 'AuthController@checkRegistered');
+$router->get('/getAllUser', 'AuthController@getAllUser');
