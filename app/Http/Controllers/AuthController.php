@@ -41,4 +41,30 @@ class AuthController extends Controller
             ]);
         }
     }
+
+    public function login()
+    {
+        $otp = self::generateOTP();
+        //update otp
+
+        //connect api whatsapp kirim otp ke user
+    }
+
+    public function checkOTP()
+    {
+        //check otp
+        //check waktu if lebih dari 3 menit reponse => failed/expired
+        //check apakah otp sesuai jika tidak response => failed
+        // return response => berhasil
+    }
+
+    public function register()
+    {
+        //ambil seluruh data dari user
+    }
+
+    public static function generateOTP()
+    {
+        return 23382;
+    }
 }
