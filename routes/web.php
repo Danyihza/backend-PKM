@@ -20,3 +20,7 @@ $router->get('/', function () use ($router) {
 $router->get('/home', 'ExampleController@index');
 $router->get('/checkNumber', 'AuthController@checkRegistered');
 $router->get('/getAllUser', 'AuthController@getAllUser');
+//article
+$router->get('/Artikel/getAllArticles', 'ArtikelController@getAllArticles');
+$router->get('/Artikel/getHeadline', 'ArtikelController@getHeadline');
+$router->get('/Artikel/detailArticle', 'ArtikelController@detailArticle');
